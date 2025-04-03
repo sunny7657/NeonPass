@@ -13,48 +13,73 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="main-container">
-      <div class="sign-up">
-        <div class="sign-up-banner">
-          <h2 class="banner-title">Join a thriving community of creators</h2>
-          <p class="banner-paragraph">with Artificial Intelligence</p>
-        </div>
-        <form class="sign-up-form">
-          <h2 class="form-title">Sign up</h2>
-          <p class="form-paragraph">
-            Sign up now and gain access to exclusive content!
-          </p>
-          <div class="form-control-wrap">
-            <div class="form-control">
-              <label class="label" for="email">Email address</label>
-              <input
-                class="input"
-                type="email"
-                id="email"
-                placeholder="name@email.com"
-              />
-            </div>
-            <div class="form-control">
-              <label class="label" for="password">Password</label>
-              <input
-                class="input"
-                type="password"
-                id="password"
-                placeholder="******"
-              />
-            </div>
+    <header class="header">
+      <nav class="page-nav">
+        <svg class="neon-icon"  width="30" height="31">
+          <use href="./images/icons.svg#icon-subtract"></use>
+        </svg>
+        <ul class="header-list">
+          <li class="header-item">
+            <button type="button" class="header-button">Home</button>
+          </li>
+          <li class="header-item">
+            <button type="button" class="header-button">Browse</button>
+          </li>
+          <li class="header-item">
+            <button type="button" class="header-button">Updates</button>
+          </li>
+          <li class="header-item">
+            <button type="button" class="header-button">Pricing</button>
+          </li>
+          <li class="header-item">
+            <button type="button" class="header-button">Sign Up</button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-container">
+        <div class="sign-up">
+          <div class="sign-up-banner">
+            <h2 class="banner-title">Join a thriving community of creators</h2>
+            <p class="banner-paragraph">with Artificial Intelligence</p>
           </div>
-          <button class="form-submit-button" type="submit">Sign Up</button>
-          <p class="form-paragraph">
-            Forgot password?
-            <a class="form-paragraph-link" href="">Reset password</a>
-          </p>
-          <p class="form-paragraph">
-            By clicking on Sign up, you agree to our Terms of service and
-            Privacy policy.
-          </p>
-        </form>
+          <form class="sign-up-form">
+            <h2 class="form-title">Sign up</h2>
+            <p class="form-paragraph">
+              Sign up now and gain access to exclusive content!
+            </p>
+            <div class="form-control-wrap">
+              <div class="form-control">
+                <label class="label" for="email">Email address</label>
+                <input
+                  class="input"
+                  type="email"
+                  id="email"
+                  placeholder="name@email.com"
+                />
+              </div>
+              <div class="form-control">
+                <label class="label" for="password">Password</label>
+                <input
+                  class="input"
+                  type="password"
+                  id="password"
+                  placeholder="******"
+                />
+              </div>
+            </div>
+            <p class="form-paragraph">
+              Forgot password?
+              <a class="form-paragraph-link" href="">Reset password</a>
+            </p>
+            <button class="form-submit-button" type="submit">Sign Up</button>
+            <p class="form-paragraph">
+              By clicking on Sign up, you agree to our Terms of service and
+              Privacy policy.
+            </p>
+          </form>
+        </div>
       </div>
-    </div>
+    </main>
   </body>
 </html>
