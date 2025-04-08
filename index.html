@@ -11,9 +11,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="./form-validation.js" defer></script>
   </head>
   <body>
-    <header class="header">
+    <!-- <header class="header">
       <nav class="page-nav">
         <svg class="neon-icon"  width="30" height="31">
           <use href="./images/icons.svg#icon-subtract"></use>
@@ -36,14 +37,14 @@
           </li>
         </ul>
       </nav>
-    </header>
+    </header> -->
     <main class="main-container">
         <div class="sign-up">
           <div class="sign-up-banner">
             <h2 class="banner-title">Join a thriving community of creators</h2>
             <p class="banner-paragraph">with Artificial Intelligence</p>
           </div>
-          <form class="sign-up-form">
+          <form class="sign-up-form" novalidate>
             <h2 class="form-title">Sign up</h2>
             <p class="form-paragraph">
               Sign up now and gain access to exclusive content!
@@ -52,7 +53,7 @@
               <div class="form-control">
                 <label class="label" for="email">Email address</label>
                 <input
-                  class="input"
+                  class="input anchor"
                   type="email"
                   id="email"
                   placeholder="name@email.com"
@@ -78,6 +79,9 @@
               Privacy policy.
             </p>
           </form>
+          <div class="message">
+            <p class="form-paragraph">There's a mistake!</p>
+          </div>
         </div>
       </div>
     </main>

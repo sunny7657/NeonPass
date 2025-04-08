@@ -63,16 +63,12 @@ body {
 .header {
   position: absolute;
   padding: 56px 226px;
-  /* top: 244px;
-  left: 330px; */
 }
 
 .page-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding-left: 226px;
-  padding-right: 226px; */
 }
 
 .header-list {
@@ -82,13 +78,11 @@ body {
 
 .main-container {
   position: relative;
-  display: flex;
-  flex-direction: column;
   flex-grow: 1;
   width: 100%;
   border-radius: 30px;
   overflow: hidden;
-  justify-content: center;
+  align-content: center;
 }
 
 .main-container::before {
@@ -115,12 +109,13 @@ body {
 .sign-up {
   display: flex;
   max-width: 1066px;
-  margin: 0 auto;
-  background: rgb(31 44 100 / 84%);
+  background: rgb(31 44 100 / 50%);
   box-shadow: 0 40px 80px 0 rgba(0, 0, 0, 0.5),
     0 100px 100px 0 rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   overflow: hidden;
+  backdrop-filter: blur(20px);
+  place-self: center;
 }
 
 .sign-up-banner {
@@ -255,4 +250,19 @@ body {
 
 .form-paragraph-link {
   color: #03a9f4;
+}
+
+.anchor {
+  anchor-name: --tooltip-anchor;
+}
+
+.message {
+  position: absolute;
+  position-anchor: --tooltip-anchor;
+  top: anchor(bottom);
+  left: anchor(center);
+  translate: -50% 4px;
+  background-color: #f4035c;
+  border-radius: 10px;
+  padding: 4px 16px;
 }
