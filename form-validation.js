@@ -5,3 +5,11 @@ form.addEventListener("submit", (event) => {
   document.querySelector(".anchor").classList.remove("anchor");
   document.getElementById("password").classList.add("anchor");
 });
+
+document.querySelector("#open-form").addEventListener("click", () => {
+  document.querySelector("dialog").showModal();
+});
+
+document.querySelector("#close-form").addEventListener("click", () => {
+  document.querySelector("dialog").close();
+});
